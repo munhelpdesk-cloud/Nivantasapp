@@ -1,7 +1,8 @@
 <resources>
     <style name="Theme.Nivanta" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">#2F4B4F</item>
-        <item name="colorPrimaryDark">#2F4B4F</item>
-        <item name="android:statusBarColor">#2F4B4F</item>
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorPrimaryDark">@color/brand</item>
+        <item name="android:statusBarColor">@color/brand</item>
+        <item name="android:navigationBarColor">@color/brand</item>
     </style>
 </resources>

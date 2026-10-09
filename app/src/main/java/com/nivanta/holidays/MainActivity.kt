@@ -25,7 +25,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 class MainActivity : AppCompatActivity() {
 
     companion object {
-        const val APP_URL = "https://nivanta-holidays-updated.vercel.app/"
+        const val APP_URL = "https://nivanta-holidays-updated-3.vercel.app/"
         const val CHANNEL_ID = "nivanta_default"
     }
 
@@ -221,9 +221,10 @@ class MainActivity : AppCompatActivity() {
                 this@MainActivity, 0, open, android.app.PendingIntent.FLAG_IMMUTABLE
             )
             val n = NotificationCompat.Builder(this@MainActivity, CHANNEL_ID)
-                .setSmallIcon(android.R.drawable.ic_dialog_info)
+                .setSmallIcon(R.drawable.ic_notification)
                 .setContentTitle(title)
                 .setContentText(message)
+                .setColor(0xFF2B484C.toInt())
                 .setAutoCancel(true)
                 .setContentIntent(pi)
                 .build()
